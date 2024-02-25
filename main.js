@@ -1,3 +1,4 @@
+import ServicioAcciones from './src/controller/accionesService.js';
 const compras = [];
 let filas = 0;
 let formInicial = document.getElementById("tablaIngreso").innerHTML;
@@ -53,6 +54,11 @@ function agregarCompras() {
 }
 function guardarDatos() {
   agregarCompras()
+  compras.forEach(element => {
+    insertarDatos(
+      element
+    )
+  });
   filas = 0
   //Limpiar el formulario
   document.getElementById('tablaIngreso').innerHTML = formInicial;
@@ -101,4 +107,12 @@ function calcularGanaciaPerdida(datos,compra){
 function calcularCambio(datos,compra){
   console.log(datos)
   return (datos.c-compra.precioCompra)/compra.precioCompra 
+}
+function insertarDatos(accion){
+  return ServicioAcciones.createAccion({
+    nombre_accion: accion.nombre,
+    fecha_compra: accion.fecha,
+    precio_compra: accion.precioCompra,
+    cantidad_acciones: accion.cantidad
+  });
 }

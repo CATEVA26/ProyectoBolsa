@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: db_acciones
+    ports:
+      - "3320:3306"
+    volumes:
+      - ./dbacciones.sql:/docker-entrypoint-initdb.d/dbacciones.sql:ro
