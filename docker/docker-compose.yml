@@ -1,11 +1,13 @@
-version: '3.8'
+version: '3.1'
+
 services:
-  db:
-    image: mysql:8.0
-    environment:
-      MYSQL_ROOT_PASSWORD: 123456
-      MYSQL_DATABASE: db_acciones
+  mysql:
+    image: mysql:latest
     ports:
-      - "3320:3306"
+      - "3309:3306"
     volumes:
-      - ./dbacciones.sql:/docker-entrypoint-initdb.d/dbacciones.sql:ro
+      - ./tablas.sql:/docker-entrypoint-initdb.d/tablas.sql
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: stockexchange
+
