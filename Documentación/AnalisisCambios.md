@@ -23,18 +23,18 @@ Las compras de acciones registradas por el usuario se muestran en una lista dent
 ### CAMBIOS 
 
 #### CI-InterfazUsuarioRegistroDeAcciones-004
-
+#### Cambio adaptativo:
 A partir de la recoleccion de datos que el usuario proporciona para el registro de compra de acciones, se necesita mostrar el porcentaje de cambio y la ganancia/perdida de las acciones invertidas
-# cambiar foto
+#### cambiar foto
 
 
 #### CI-InterfazUsuarioRegistroDeAcciones-005
-
+#### Cambio adaptativo:
 A partir de la recoleccion de datos que el usuario proporciona para el registro de compra de acciones, el historial de compras deberá poder ordenarse
-# cambiar foto
+#### cambiar foto
 
 #### CI-PersistenciaDeListaDeRegistroDeAcciones-006
-
+#### Cambio adaptativo:
 A partir de los datos que el usuario proporciona para el registro de compra de acciones, el historial de compras deberá poder mantenerse en el tiempo
 
 
