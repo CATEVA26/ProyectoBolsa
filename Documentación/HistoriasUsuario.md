@@ -1,18 +1,23 @@
 # Historias de usuario
+![image](https://github.com/CATEVA26/ProyectoBolsa/assets/144194026/b951b175-7e91-4bd9-ae88-94bd33af78a8)
 
-## Proyecto Bolsa NY
+![image](https://github.com/CATEVA26/ProyectoBolsa/assets/144194026/db8afeaf-f9f2-4387-b4df-649a1c7a8bf8)
 
-### Historia de usuario 1:
-Como usuario, quiero poder registrar la compra de acciones en la aplicación. Para lograr esto, deseo ingresar la información relevante, incluyendo el nombre de la acción, la fecha de compra, el precio de compra por acción y la cantidad de acciones adquiridas. Esto me permitirá realizar un seguimiento de mis inversiones de manera eficiente.
+# Sprint 1
+## Objetivo: Implementar las funcionalidades de calculo de rendimiento de la compra de acciones y que él registro de acciones se puedan ordenar.
+### Fecha de inicio: lunes, 19 de febrero del 2024
+### Fecha fin: lunes, 26 de febrero del 2024
 
-### Historia de usuario 2:
-Como usuario, quiero poder ver una lista de las acciones que he comprado en la aplicación. Al acceder a esta lista, espero visualizar información crucial como el nombre de la acción, la fecha de compra, el precio de compra por acción, la cantidad de acciones y el costo total de la compra. Esto me proporcionará una visión clara de mi cartera de acciones y su rendimiento.
+![image](https://github.com/CATEVA26/ProyectoBolsa/assets/144194026/9b9bbff8-ff5b-4d1e-8d51-1fc2893689d7)
 
+![image](https://github.com/CATEVA26/ProyectoBolsa/assets/144194026/5ae1830d-829e-4acc-bbdf-d36b63a6c0a2)
 
+# Sprint 2
+## Objetivo: Mantener las compras que el cliente ha efectuado para mantener un historial de las compras
+### Fecha de inicio: lunes, 26 de febrero del 2024
+### Fecha fin: lunes, 4 de marzo del 2024
 
-
-
-
+![image](https://github.com/CATEVA26/ProyectoBolsa/assets/144194026/4283d59e-5d30-45e1-8750-3448b962012f)
 
 
 
