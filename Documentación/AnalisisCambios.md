@@ -13,12 +13,30 @@ CI-InterfazUsuario-002
 Se trata de la logica del programa, hace referencia a los datos que son ingresados y registrados en la aplicación por parte del usuario, que posteriormente se registran en pantalla.
 
 #### CI-InterfazUsuarioRegistroDeAcciones-002
-Se trata de la interfaz gráfica con la que interactua el usuario, es donde se realiza el ingreso de la información de compra y se presenta la informacion recopilada previamente. 
-![image](https://github.com/CATEVA26/ProyectoBolsa/assets/144194026/68b2a704-92ac-4554-9bed-5edd0bd39cd9)
+Se trata de la interfaz gráfica con la que interactua el usuario, en este caso donde se realiza el ingreso de la información de compra y se presenta la informacion recopilada previamente. 
+![](image-1.png)
+
+#### CI-ListaDeRegistroDeAcciones-003
+Las compras de acciones registradas por el usuario se muestran en una lista dentro del programa pero no mantienen persistencia.
 
 
 ### CAMBIOS 
 
-#### CI-InterfazUsuario-003
+#### CI-InterfazUsuarioRegistroDeAcciones-004
 
-A partir de la recolección de datos del mercado, se necesita mostrar el porcentaje de cambio y la ganancia/perdida de las acciones invertidas
+A partir de la recoleccion de datos que el usuario proporciona para el registro de compra de acciones, se necesita mostrar el porcentaje de cambio y la ganancia/perdida de las acciones invertidas
+# cambiar foto
+
+
+#### CI-InterfazUsuarioRegistroDeAcciones-005
+
+A partir de la recoleccion de datos que el usuario proporciona para el registro de compra de acciones, el historial de compras deberá poder ordenarse
+# cambiar foto
+
+#### CI-PersistenciaDeListaDeRegistroDeAcciones-006
+
+A partir de los datos que el usuario proporciona para el registro de compra de acciones, el historial de compras deberá poder mantenerse en el tiempo
+
+
+
+
