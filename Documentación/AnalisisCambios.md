@@ -39,7 +39,9 @@ A partir de la recoleccion de datos que el usuario proporciona para el registro 
 A partir de la recoleccion de datos que el usuario proporciona para el registro de compra de acciones, el historial de compras deberá poder ordenarse
 
 Se colocó 3 maneras de ordenar el historial de compra: Por nombre, por precio y por cantidad
+
 Por nombre:
+
 ![image](https://github.com/CATEVA26/ProyectoBolsa/assets/144194026/0d885c9b-ebde-4dc8-9204-ada70764ee6e)
 
 Por cantidad:
