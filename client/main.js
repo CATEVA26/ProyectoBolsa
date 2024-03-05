@@ -90,9 +90,10 @@ function mostrarDatosEnLista(datos) {
 
   // Limpiar la lista antes de mostrar los datos
   listaDatos.innerHTML = '';
+  console.log(datos)
   datos.forEach(async (compra,index) => {
     let datosMercado = await getPrecioMercado(compra.name)
-    console.log(datosMercado)
+   // console.log(datosMercado)
     const precioTotal = compra.precioCompra * compra.cantidad;
     let ul = document.createElement('ul')
     ul.className = 'info'
@@ -121,15 +122,13 @@ async function getPrecioMercado(symbol) {
   let urlPrecio = `https://finnhub.io/api/v1/quote?symbol=${symbol}&token=clls8cpr01qske4s3m10clls8cpr01qske4s3m1g`;
   let res = await fetch(urlPrecio)
   let datos = await res.json();
-  console.log(datos)
+ // console.log(datos)
   return datos
 }
 function calcularGanaciaPerdida(datos, compra) {
-  console.log(datos)
   return datos.c * compra.cantidad;
 }
 function calcularCambio(datos, compra) {
-  console.log(datos)
   return (datos.c - compra.precioCompra) / compra.precioCompra
 }
 
@@ -157,26 +156,27 @@ listaDatos.addEventListener('click', (event) => {
 async function ordenarPorNombre(){
   var datos = await obtenerTodosLosStocks();
   datos.sort((a,b)=>a.name.localeCompare(b.name))
-  mostrarDatosEnLista(datos.reverse())
+  datos.forEach((e)=>console.log(e.name))
+  mostrarDatosEnLista(datos)
 }
 
 async  function ordenarPorPrecio(){
   var datos = await obtenerTodosLosStocks();
   datos.sort((a,b)=>a.precioCompra-b.precioCompra)
-  console.log(datos)
-  mostrarDatosEnLista(datos.reverse())
+  datos.forEach((e)=>console.log(e.precioCompra))
+  mostrarDatosEnLista(datos)
 }
 
 async  function ordenarPorCantidad(){
   var datos = await obtenerTodosLosStocks();
   datos.sort((a,b)=>a.cantidad-b.cantidad)
-  console.log(datos)
-  mostrarDatosEnLista(datos.reverse())
+  datos.forEach((e)=>console.log(e.cantidad))
+  mostrarDatosEnLista(datos)
 }
 
 async function ordenarPorFecha(){
   var datos = await obtenerTodosLosStocks();
   datos.sort((a,b)=>b.fechaCompra.localeCompare(a.fechaCompra))
-  console.log(datos)
+  datos.forEach((e)=>console.log(e.fechaCompra))
   mostrarDatosEnLista(datos)
 }
